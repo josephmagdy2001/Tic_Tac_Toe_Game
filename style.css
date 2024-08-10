@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading Style */
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+/* Paragraph Style */
+.mean p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .mean p {
+        font-size: 1rem;
+    }
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 320px;
+}
+
+/* Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Cell Styles */
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.cell:active {
+    background-color: #d0d0d0;
+}
+
+/* Message Styles */
+.message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Restart Button Styles */
+.restart {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.restart:hover {
+    background-color: #0056b3;
+}
+
+.restart:active {
+    background-color: #004494;
+    transform: scale(0.98);
+}
+ 
